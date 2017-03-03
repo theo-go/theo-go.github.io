@@ -1,75 +1,163 @@
-<!DOCTYPE HTML>
-<!--
-	Story by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>TAYO</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="TAYO theo goetemann producer audio music">
-        <meta name="author" content="TAYO">
-		<link rel="stylesheet" href="assets/css/main.css" />
-        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-	</head>
-	<body>
+    <title>TAYO</title>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="w3.css">
+                <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                    <link rel="shortcut icon" href="images/favicon.ico" type="image/ico">	
+                        <style>
+                            body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+                            .w3-row-padding img {margin-bottom: 12px}
+                            .bgimg {
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                background-image: url("bgimg.jpg");
+                                min-height: 100%;
+                            }
+                        </style>
+                        <body>
+                            
+                            <!-- Sidenav with image -->
+                            <nav class="w3-sidenav w3-hide-medium w3-hide-small" style="width:40%">
+                                <div class="bgimg"></div>
+                            </nav>
+                            
+                            <!-- Hidden Sidenav (reveals when clicked on menu icon)-->
+                            <nav class="w3-sidenav w3-black w3-animate-right w3-center w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidenav">
+                                <a href="javascript:void(0)" onclick="closeNav()" class="w3-closenav w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+                                    <i class="fa fa-remove"></i>
+                                </a>
+                                <a href="#" class="w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+                                <a href="#portfolio" class="w3-text-grey w3-hover-black" onclick="closeNav()">Music</a>
+                                <a href="#otherwork" class="w3-text-grey w3-hover-black" onclick="closeNav()">Other Work</a>
+                                <a href="#about" class="w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+                                <a href="#contact" class="w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+                            </nav>
+                            
+                            <!-- Page Content -->
+                            <div class="w3-main w3-padding-large" style="margin-left:40%">
+                                
+                                <!-- Menu icon to open sidenav -->
+                                <span class="w3-opennav w3-top w3-padding-top w3-xxlarge w3-margin-right w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+                                
+                                <!-- Header -->
+                                <header class="w3-container w3-padding-128 w3-center" id="home">
+                                <div>
+      								<img src="tayo1.jpg" alt="logo" style="width: 50%; height: 50%" >
+    							</div>
+                               <h2 class="w3-text-grey">Producer | Composer</h2>
+								</header>
+                                
+                                <!-- Portfolio Section -->
+                                <div class="w3-padding-32 w3-content" id="portfolio">
+                                    <h2 class="w3-text-grey">Music</h2>
+                                    <hr class="w3-opacity">
+                                    
+                                    <!-- portfolio-->
+                                    <div class="w3-row-padding" style="margin:0 -16px">
+                                        <div class="w3-full">
+<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/208207820&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+                                    </div>
+                                </div>
+                                </div>
+                                
+                                    <!-- Other Work-->
+                        <div class="w3-padding-32 w3-justify w3-text-grey w3-content" id="otherwork">
+                                    <h2 class="w3-text-grey">Other Work</h2>
+                                    <hr class="w3-opacity">
+                                    <div class="w3-row-padding" style="margin:0 -16px" >
+                                        <div class="w3-full">
+                                    		<h3>MSP/Jitter</h3>
+                                    	</div>
+                                       <p>&nbsp;</p>
+                                    	<div>
+                                    		<iframe class="w3-padding-large" img align= "right" width="360" height="315" src="https://www.youtube.com/embed/oL8yFUJLVkk" frameborder="0" allowfullscreen></iframe>
+                                    	</div>
+                                    	<div>
+                                        <h5>Again (2015)</h5>
+                                    	  <p> Storytelling doesn't always need words. Can repetition of video and visual themes matched to specific sounds carry the viewer through an "open-boxed" version of visual narration? Would it trigger similar responses in empathy for the viewer as well-written lyrics or a film would? </p>
+                                    	  <p>Created with Max MSP/Jitter. 40+ audio samples triggered live on a Novation Launchpad. Midi then feeds into Max MSP, triggers random objects which send bangs to jit windows and frame control messages. </p>
+                                    	  <p> Patch uses three video files, which contain compilations of 2-5 second clips. Frame control messages and a limited number of video files were used due to CPU constraints and pop-up/disappear effect of quicktime videos (instead of other approaches (eg. jit glue/scissors objects)).</p>
+                                    	</div>
+                                        	<p>&nbsp;</p>
+                                		<div>
+      										<img class="w3-padding-large" img align= "right" src="spatialawareness13.png" alt="logo" width= "360" height= "180" >
+                                    	</div>
+                                      <div>
+                                       	<h5>Sound Mapping (2017)</h5>
+                                       	<p>"Which way do we go?" &nbsp; &nbsp; &nbsp;*looks at phone* &nbsp; &nbsp; &nbsp;"I dunno, Google maps has been acting funny lately, the arrow never points the right direction anymore." &nbsp; &nbsp; "Well, we're at 15th and L right now, so I guess we go right?"</p>
+                                       	<p>For anything out of sensory range, we perceive the distance between us and the location visually, usually with a map. And unless Google maps' arrow or a compass is directing us, we can lose our sense of direction. </p>
+                                       	<p>In the Sound Mapping project, a user uploads two geospatial datasets: one with possible locations to 'stand' at, and the other, locations throughout Washington D.C. (in the image, a dataset of popular tourist locations and a dataset from DC's open data portal of 'places of worship' are uploaded). The Max patch then plays a sinusoidal wave depending on which entry is selected, with its panning, amplitude, and pitch modulating according to the distance and direction of any two given points. If you're bougie enough, adding a random and poly~ object would create some music out of your datasets, but who am I to talk, I'm the one that made the patch in the first place. &nbsp; &nbsp; </p>
+                                        </div>
+                                        </div>
+                                    <div>
+                                    <button class="w3-button w3-light-grey w3-padding-large ">
+                                        <a href="spatialawareness.txt" download><i class="fa fa-download"></i> Download Max Patch
+                                    </button></a>
+                                    <p>&nbsp;</p>
+                                	</div>
+                                    	<div>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="divided">
-					<!-- One -->
-					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
-						<div class="content">
-							<h1>TAYO</h1>
-							<p class="major"><!--[-->Theo Goetemann</br>Producer | Composer </p>
-						</div>
-						<div class="image">
-							<img src="images/banner.jpg" alt="" />
-						</div>
-					</section>
+                                    <div class="w3-row-padding" style="margin:0 -16px" >
+                                    <div class="w3-full">
+									<div>
+                                    <h2>Electroacoustic</h2>
+                                    </div>
+                                    <div>
+                                    <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/180646261&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+                                      </div>
+                                </div>
+                                <p>&nbsp;</p>
+                                
+                                
+                                <!-- About Section -->
+                                <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+                                    <h2>About</h2>
+                                    <hr class="w3-opacity">
+                                    <p>Theo's project 'TAYO,' an onomatopoeia of his own name, synthesizes years of production experience into a hip hop/electronic fusion. </p>
+                                    <p>Theo frequently collaborates with <a href="https://soundcloud.com/ericheron">Eric Heron</a>, <a href="https://soundcloud.com/oluwakunem">Kunem</a>, and <a href="https://soundcloud.com/ina_carte">Christina Carte</a>, and is currently developing a project with <a href="http://tmsoundnigeria.com/">The Ministry of Sound Nigeria</a> to build a collaborative network of musicians and creators that extends past geographic boundaries.</p>
+                                    <p>Alongside music production, Theo is an active creator in the electroacoustic music and Max MSP worlds. His electroacoustic piece "Kill the Pianist," was performed at the 2015 Leonard Bernstein Festival of the Arts, and several of his Max pieces have been featured in the BEAMS Electronic Music Marathon and CCT's annual Media Fest in Washington D.C. </p>
+                                    <p>Over the past four years, Theo has taught workshops on Ableton Live, Jitter (responsive visuals/video integration), crash courses in music production, and has TAed for <em>Introduction to Music Technology </em>at Brandeis University.</p>
+                                    <p>&nbsp;</p>
+                                    </div>
+                                    <div>
+                                    <button class="w3-button w3-light-grey w3-padding-large ">
+                                        <a href="Goetemann_Resume.pdf" download><i class="fa fa-download"></i> Download Resume
+                                    </button></a>
+                                	</div>
+                                
+                                <!-- Footer -->
+                                <hr class="w3-opacity" id="contact">
+                                <div class="w3-section">
+                                <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity" style="margin:-24px">
+                                      <p><em class="fa fa-map-marker w3-large fa-fw w3-margin-right"></em> Washington DC, US</p>
+                                      <p><em class="fa fa-phone w3-large fa-fw w3-margin-right"></em> Phone: 781 835 8209</p>
+                                      <a><a href="mailto:tgoetemann@gmail.com" target="_blank">
+                                      <p><em class="fa fa-envelope w3-large fa-fw w3-margin-right"> </em>tgoetemann@gmail.com</p></a>
+                                    <a><a href="https://www.youtube.com/channel/UCI3z2Re6IFgPSAzJvO3ldng" target="_blank"><i class="fa fa-youtube w3-xxlarge w3-hover-text-purple"></i></a>
+                                    <a><a href="https://twitter.com/tayogoe" target="_blank"><i class="fa fa-twitter w3-xxlarge w3-hover-text-light-blue"></i></a>
+                                    <a><a href="https://www.linkedin.com/in/theogo/" target="_blank"><i class="fa fa-linkedin w3-xxlarge w3-hover-text-indigo"></i></a>
+                                    <!-- End footer -->
+                                </footer>
+                                
+                                <!-- END PAGE CONTENT -->
+                            </div>
+                            
 
-				<!-- Two -->
-			  <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
-              
-					  <div class="content">
-					    <h2>Current Work</h2>
-                        <p>Combining electronic, hip hop, latin, and pop elements.</p>Frequently collaborates with <a><a href="https://soundcloud.com/ericheron" target="_blank">Eric Heron,</a> <a><a href="https://soundcloud.com/oluwakunem" target="_blank">Kunem</a>, and <a><a href="https://soundcloud.com/ina_carte" target="_blank">Christina Carte</a>. Uses Ableton and Massive.</p>
-</div>
-<iframe width="71%" height="450" scrolling="no" theme_color="FFFFFF" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/208207820&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-</section>
-              
-              
-			  <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first3">
-			    <div class="content">
-			      <h2>Past Work</h2>
-			      <p>From 2013 onwards. Although these tracks do not all fall under Theo's current project, they provide the listener a look at the building blocks that led to 'TAYO.' </p>
-		        </div>
-			    <iframe width="71%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/208206729&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-		      </section>
-
-
-
-
-				<!-- Footer -->
-					<footer class="wrapper style1 align-center">
-						<div class="inner">
-							<ul class="icons">
-								<li><a href="mailto:tgoetemann@gmail.com" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
-							</ul>
-	
-						</div>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+                            <script>
+                            // Open and close sidenav
+                            function openNav() {
+                                document.getElementById("mySidenav").style.width = "60%";
+                                document.getElementById("mySidenav").style.display = "block";
+                            }
+                            
+                            function closeNav() {
+                                document.getElementById("mySidenav").style.display = "none";
+                            }
+                            </script>
+<!-- thank you w3, great simple template -->
+                        </body>
 </html>
