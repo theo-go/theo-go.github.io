@@ -1,196 +1,21 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-<title>Tayo Goe</title>
-<meta charset=utf-8 />
-<meta name=viewport content="width=device-width, initial-scale=1" />
-<link rel=stylesheet href=assets/css/main.css />
-<link rel="shortcut icon" href=images/favicon.ico />
-</head>
-<body>
-<div id=wrapper class=divided>
-<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
-<div class=content>
-<h1>
-<div>
-<img src=images/tayo1.jpg alt=logo style=width:60%;height:50%>
-</div>
-</h1>
-<p class=major>Producer | Creative Code | Open Data</p>
-<a>
-<a href=https://public.tableau.com/profile/theo.goe#!/ target=_blank><i class="fa fa-bar-chart-o w3-xxlarge w3-hover-text-indigo"></i></a>
-<a>
-<a href=mailto:tgoetemann@gmail.com target=_blank><em class="fa fa-envelope w3-large fa-fw w3-margin-right"> </em></a>
-<a>
-<a href=https://twitter.com/tayo_goe target=_blank><i class="fa fa-twitter w3-xxlarge w3-hover-text-light-blue"></i></a>
-<a>
-<a href=https://www.linkedin.com/in/theogo/ target=_blank><i class="fa fa-linkedin w3-xxlarge w3-hover-text-indigo"></i></a>
-</div>
-<div class=image>
-<img src=images/banner.jpg alt />
-</div>
+---
+layout: default
+title: Home
+main_title: Links to Articles
+---
+<section class="tiles">
+    {% assign sorted = site.portfolio | reverse %}
+    {% for item in sorted %}
+    <article class="{% cycle " style1", "style2" , "style3" , "style4" , "style5" , "style6" %}">
+        <span class="image">
+            <img src="{{ item.img_src | absolute_url }}" alt="" />
+        </span>
+        <a href="{{ item.href | absolute_url }}" target="_blank">
+            <h2>{{ item.title}}</h2>
+            <div class="content">
+                <!-- <p>{{ item.description}}</p> -->
+            </div>
+        </a>
+    </article>
+    {% endfor %}
 </section>
-<section class="wrapper style1 align-center">
-<div class=inner>
-<h1>Data visualizations</h1>
-<p><a href=https://public.tableau.com/profile/theo.goe#!/ target=_blank>Click here</a> to view and interact with more visualizations on <a href=https://public.tableau.com/profile/theo.goe#!/ target=_blank>Tableau Public</a>.</p>
-</div>
-</section>
-
-<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id=first>
-<div class=content>
-<h3>DMV housing</h3>
-<div>
-  <p> DMV area rent and ownership costs and levels 2010-2015 </p>
-</div>
-</div>
-<div class=image>
-<img src=images/housing.gif alt />
-</div>
-</section>
-
-<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id=first>
-<div class=content>
-<h3>Mass shootings victims</h3>
-<div>
-  <p> Mass shooting fatalities and injuries in the United States 1986-2017. Article published on <a href=https://medium.com/@tayo_goe/mass-shooting-victims-1986-2017-608d73add729 target=_blank>Medium about this visualization</a>.</p>
-</div>
-</div>
-<div class=image>
-<img src=images/shootings4.gif alt />
-</div>
-</section>
-
-<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id=first>
-<div class=content>
-<h3>US Congress on immigration</h3>
-<div>
-  <p> Text/network analysis of 115th US Congressional House members' Twitter activity on immigration</p>
-  </div>
-</div>
-<div class=image>
-<img src=images/networkgif.gif alt />
-</div>
-</section>
-
-<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id=first>
-<div class=content>
-<h3>DC schools</h3>
-<div>
-  <p> DC public and charter school openings and closings 1851-2017 </p>
-  </div>
-</div>
-<div class=image>
-<img src=images/schools3.gif alt />
-</div>
-</section>
-
-<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id=first>
-<div class=content>
-<h3>FOIA requests to the DC city government</h3>
-<div>
-  <p> Breakdown of FOIA requests to the Washington DC city government 2015-2017. Included in the Investigative Reporting Workshop's (iLab) article <a href=http://investigativereportingworkshop.org/ilab/story/open-government-chief-out/ target=_blank>on the future of open data in DC</a>. </p>
-  </div>
-</div>
-<div class=image>
-<img src=images/foiadcgov.png alt />
-</div>
-</section>
-
-<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id=first>
-<div class=content>
-<h3>Earthquakes in America and Mexico</h3>
-<div>
-  <p> Earthquake seismic activity in the United States and Mexico mapped 1800-2017 </p>
-  </div>
-</div>
-<div class=image>
-<img src=images/earthquakes.gif alt />
-</div>
-</section>
-
-<section class="wrapper style1 align-center">
-<div class=inner>
-
-<h1>Projects and reports</h1>
-<p>Mixed media projects use Max MSP/Jitter and js. </br>Visualizations for reports are created with Tableau. Datasets for reports are published and available at <a href="https://data.world/" target=_blank>data.world.</a></p>
-</div>
-</section>
-
-</section>
-<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id=first>
-
-<div class=content>
-<h2>Mastering of a Music City: DC Music Initiative</h2>
-<div>
-<p> While Washington DC is home to a diverse and rich music and arts community, little attention has been directed toward cultural, music, and art grant allocations from the city government. </p>
-<p>This study provides for the first time, an overview of the current state of grant allocations for the arts in Washington DC from 2013 - 2016, as well as an in depth look at the state of DC music grant allocations during the same time period. This study leverages datasets from the <a href=http://opendata.dc.gov/ target=_blank>Washington DC open data portal</a>. </p>
-<p><a href=downloads/FinalMasteringofAMusicCityDCMusicInitiativeWhitePaper.pdf download><i class="fa fa-download"></a></i></p>
-</div>
-</div>
-<div class=image>
-<img src=images/graph.png alt />
-</div>
-</section>
-<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-<div class=content>
-<h2>Again (2015)</h2>
-<p> Storytelling doesn't always need words. Can repetition of video and visual themes matched to specific sounds carry the viewer through an "open-boxed" version of visual narration? Would it trigger similar responses in empathy for the viewer as well-written lyrics or a film would? </p>
-<p> Created with Max MSP/Jitter. 40+ audio samples triggered live on a Novation Launchpad. Midi then feeds into Max MSP, triggers random objects which send bangs to jit windows and frame control messages. </p>
-<p> The patch uses three video files, which contain compilations of 2-5 second clips. Frame control messages and a limited number of video files were used due to CPU constraints and pop-up/disappear effect of quicktime videos (instead of other approaches (eg. jit glue/scissors objects).</p>
-<ul class="actions vertical">
-<p><a href=downloads/version2.0.maxpat download><i class="fa fa-download"></a></i></p>
-</ul>
-</div>
-<div>
-<iframe class=width=100% height=100% src="https://www.youtube.com/embed/XWPDDR1_XIQ?ecver=2" frameborder=10 allowfullscreen></iframe>
-</div>
-</section>
-<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
-<div class=content>
-<h2>Sound Mapping (2017)</h2>
-<p>For anything out of sensory range, we perceive the distance between us and a location visually (eg. a map).
-In the Sound Mapping project, a user uploads two geospatial datasets: one with possible locations to 'stand' at, and the other, a set of locations anywhere in North America (in the image, a dataset of popular tourist locations and a dataset from DC's open data portal of 'places of worship' are uploaded). The Max patch then plays a sinusoidal wave depending on which entry is selected, with its panning, amplitude, and pitch modulating according to the distance and direction of any two given points.
-Based on the change in these variables from one location to another, the listener can perceive location and distance through its relative sonic placement to another location. &nbsp; &nbsp; </p>
-<ul class="actions vertical">
-<p><a href=downloads/spatialawareness13.maxpat download><i class="fa fa-download"></a></i></p>
-</ul>
-</div>
-<div class=image>
-<img src=images/spatialawareness.png alt />
-</div>
-</section>
-
-<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-<div class=content>
-  <h1>About</h1>
-  <p>Theo Goetemann is a mixed media artist and data scientist. His work frequently explores network and longitudinal data from open data sources and web scrapers. Theo is particularly interested in employing data-driven and narrative analysis techniques to examine online communities. His experience in this field includes research for the Georgetown School of Nursing and Health Studies, publications on American youth's consumption/participation in white nationalist/neo-Nazi online forums, and <a href="http://city78.org/" target=_blank>City78</a>, an urban analytics organization which he co-founded in 2017 which develops data-driven, human-centric solutions for city governments, organizations and community leaders. As a supporter of open data, he regularly contributes datasets from his projects to <a href="https://data.world/" target=_blank>data.world</a>. His thesis for the Georgetown Government Honors Program examined the rapid expansion of national open data initiatives globally, which he defended in May 2017, receiving honors with distinction.
-</br></p><p>
-  Theo's mixed media pieces deal with interaction with data through physical, three-dimensional spaces and auditory mediums, and are influenced by the idea of making data intuitive to the viewer. He is an active creator in the electroacoustic music and Max MSP worlds. His electroacoustic piece "<a href="https://soundcloud.com/tayogoe/kill-the-pianist?in=tayogoe/sets/demo-tracks" target=_blank>Kill the Pianist</a>" was performed at the 2015 Leonard Bernstein Festival of the Arts, and several of his Max MSP pieces have been featured in the BEAMS Electronic Music Marathon and CCT's annual Media Fest in Washington D.C. Theo is currently developing a project with <a href=http://tmsoundnigeria.com/ target=_blank>The Ministry of Sound Nigeria</a> to build a collaborative network of musicians and creators that extends past geographic boundaries.</p>
-  <p>Over the past five years, Theo has taught workshops on Ableton Live, Jitter (responsive visuals/video integration), and introduction to music production and technology courses. He speaks English fluently, Mandarin and Spanish conversationally, and is always working on his Korean.</p>
-<ul class="actions vertical">
-<p><a href=downloads/Thesis_2.32.pdf download><p> Download thesis</p></a></p>
-<!--<p><a href=downloads/Goetemann_resume50-min.pdf download><p> Download resume</p></a></p> -->
-</ul>
-</div>
-</section>
-<footer class="wrapper style1 align-center">
-<div class=inner>
-<ul class=icons>
-<li><a href=https://public.tableau.com/profile/theo.goe#!/ target=_blank class="icon style2 fa fa-bar-chart-o"><span class=label>Instagram</span></a></li>
-<li><a href=mailto:tgoetemann@gmail.com target=_blank class="icon style2 fa-envelope"><span class=label>Email</span></a></li>
-<li><a href="https://www.instagram.com/tayogoe/?hl=en" target=_blank class="icon style2 fa-instagram"><span class=label>Instagram</span></a></li>
-<li><a href=https://twitter.com/tayo_goe target=_blank class="icon style2 fa-twitter"><span class=label>Twitter</span></a></li>
-<li><a href=https://www.linkedin.com/in/theogo/ target=_blank class="icon style2 fa-linkedin"><span class=label>LinkedIn</span></a></li>
-</ul>
-</div>
-</footer>
-</div>
-<script src=assets/js/jquery.min.js></script>
-<script src=assets/js/jquery.scrollex.min.js></script>
-<script src=assets/js/jquery.scrolly.min.js></script>
-<script src=assets/js/skel.min.js></script>
-<script src=assets/js/util.js></script>
-<script src=assets/js/main.js></script>
-</body>
-</html>
