@@ -5,8 +5,8 @@
     <title>Theo Goetemann | About</title>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-<link rel="stylesheet" href="/assets/css/main.css">
-<link rel="stylesheet" href="/assets/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/fontawesome-all.min.css">
 <noscript>
     <link rel="stylesheet" href=""></noscript>
 </head>
@@ -91,20 +91,21 @@ Some favorites for listening are Simon & Garfunkel, Josh Ritter, Feed Me, Lupe F
             <div class="inner">
                 <section>
                     <h2>Get in touch</h2>
-                    <form method="POST" data-netlify="true" onSubmit="alert('Thank you! Will email you back soon!');">
+                    <form   action="https://formspree.io/f/xrgollkp"
+  method="POST">
                         <div class="fields">
                             <div class="field half">
-                                <input type="text" name="name" id="name" placeholder="Name" />
+                                <input type="text" name="person_name" id="name" placeholder="Name" required/>
                             </div>
                             <div class="field half">
-                                <input type="email" name="email" id="email" placeholder="Email" />
+                                <input type="email" name="_replyto" id="email" placeholder="Email" required/>
                             </div>
                             <div class="field">
-                                <textarea name="message" id="message" placeholder="Message"></textarea>
+                                <textarea name="message" id="message" placeholder="Message" required></textarea>
                             </div>
                         </div>
                         <ul class="actions">
-                            <li><input type="submit" value="Send" class="primary" /></li>
+                            <li><button type="submit" class="primary" style="letter-spacing: normal;"/>Send</button></li>
                         </ul>
                     </form>
                 </section>
@@ -120,11 +121,11 @@ Some favorites for listening are Simon & Garfunkel, Josh Ritter, Feed Me, Lupe F
         </footer>
     </div>
     <!-- Scripts -->
-    <script src="/assets/js/jquery.min.js"></script>
-    <script src="/assets/js/browser.min.js"></script>
-    <script src="/assets/js/breakpoints.min.js"></script>
-    <script src="/assets/js/util.js"></script>
-    <script src="/assets/js/main.js"></script>
+    <script src="http://localhost:4000/assets/js/jquery.min.js"></script>
+    <script src="http://localhost:4000/assets/js/browser.min.js"></script>
+    <script src="http://localhost:4000/assets/js/breakpoints.min.js"></script>
+    <script src="http://localhost:4000/assets/js/util.js"></script>
+    <script src="http://localhost:4000/assets/js/main.js"></script>
 </body>
 <!--
 	ty to Phantom by HTML5 UP html5up.net | @ajlkn for the template!
