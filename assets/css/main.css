@@ -196,7 +196,7 @@ input, select, textarea {
 		}
 
 	h2, h3, h4, h5, h6 {
-		font-weight: 900;
+		font-weight: 600;
 		line-height: 1.1;
 		margin: 0 0 2em 0;
 		/*text-transform: uppercase;*/
@@ -2528,7 +2528,7 @@ input, select, textarea {
 		button.primary,
 		.button.primary {
 			box-shadow: none;
-			background-color: #585858;
+			background-color: #275052;
 			color: #ffffff !important;
 		}
 
