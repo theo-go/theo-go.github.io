@@ -8,7 +8,9 @@ main_title: Links to Articles
     {% for item in sorted %}
     <article class="{% cycle " style1", "style2" , "style3" , "style4" , "style5" , "style6" %}">
         <span class="image">
+        	<a href="{{ item.href | absolute_url }}" target="_blank">
             <img src="{{ item.img_src | absolute_url }}" alt="" />
+        </a>
         </span>
         <a href="{{ item.href | absolute_url }}" target="_blank">
             <h2>{{ item.title}}</h2>
