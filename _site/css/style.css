@@ -315,7 +315,7 @@ header[role="main-header"] h1 {
 
 header[role="main-header"] h1>a {
     float: left;
-    display: block;
+    /*display: block;*/
     max-width: 73px
 }
 
@@ -769,4 +769,15 @@ select {
     height: 100%;
     z-index: 9999;
     background: url(../images/Preloader_11.gif) center no-repeat #fff;
+}
+
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #525252!important;
+    /*padding: 10px 2px 10px 2px;*/
+    margin: 1.2em .2;
+    padding: 0;
 }
