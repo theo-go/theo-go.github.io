@@ -1,24 +1,2 @@
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
-
-your_name: Theo Goetemann
-main_title: Article Links
-main_paragraph: Founder of Basil Labs. Beginning conversations at the intersection of smarter business strategy, ethical + responsible AI and big data.
-twitter: https://twitter.com/theo_goe
-medium: https://medium.com/@theo_goe
-linkedin: https://www.linkedin.com/in/theogo/
-
-
-
-collections:
-  portfolio:
-
-# # Other
-# markdown: kramdown
-
-# kramdown:
-#   input: GFM
-#   syntax_highlighter: rouge
-#   syntax_highlighter_opts:
-#     block:
-#       line_numbers: true
