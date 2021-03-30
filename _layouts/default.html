@@ -27,9 +27,20 @@ https://www.transparenttextures.com/ -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 </head>
+<script type="text/javascript">
+	//paste this code under the head tag or in a separate js file.
+	// Wait for window load
+	$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+</script>
 
-<body>
+<body> 
+	<!-- spinner -->
+	<div class="se-pre-con"></div>
     <!-- side bar -->
     <aside role="siderbar-nav" class="side-bar">
         <nav>
