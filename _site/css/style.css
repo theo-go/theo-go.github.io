@@ -314,7 +314,7 @@ header[role="main-header"] h1 {
 }
 
 header[role="main-header"] h1>a {
-    float: left;
+    /*float: left;*/
     /*display: block;*/
     max-width: 73px
 }
@@ -781,3 +781,21 @@ hr {
     margin: 1.2em .2;
     padding: 0;
 }
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-image: url(../images/ov25.png), url(../images/main.png);
+    background-size: cover;
+    background-repeat: repeat, no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-image: url(../images/ov25.png), url(../images/main.png);
+    background-size: cover;
+    background-repeat: repeat, no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+  }
