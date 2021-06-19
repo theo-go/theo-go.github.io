@@ -790,6 +790,7 @@ hr {
     background-position: center center;
     background-attachment: fixed;
   }
+}
 
 @media (prefers-color-scheme: dark) {
   body {
@@ -799,3 +800,4 @@ hr {
     background-position: center center;
     background-attachment: fixed;
   }
+}
